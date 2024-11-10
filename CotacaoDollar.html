@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversão Dolar para Real</title>
+    <title>Conversão de Real para Dólar</title>
 </head>
 <body>
     <center>
-    <h1>Convetar sua moeda</h1>
-    </center>
+        <h1>Converter Real para Dólar</h1>
+        
+       
+        <form id="formConversao">
+            <label for="valorReal">Digite o valor em R$:</label>
+            <input type="number" id="valorReal" min="0.01" step="0.01" required><br><br>
 
-    <center>
-        <form id="CotDolReal"">
-
-        <label for="ValorReal">Digite o Valor em R$</label>
-        <input type="number" id="ValooReal" min="0.01" required><br>
-
+           
+            <button type="button" onclick="converter()">Converter para Dólar</button>
         </form>
+
+       
+        <h2 id="resultado"></h2>
     </center>
+
+    <script src="script.js"></script>
+
+
 </body>
 </html>
